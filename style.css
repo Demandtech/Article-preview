@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap');
+
+*{
+ padding: 0;
+ margin: 0;
+}
+
+body{
+ background-color: hsl(210, 46%, 95%);
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ height: 100vh;
+ font-size: 13px;
+}
+
+.body{
+ width: 60%;
+ display: flex;
+ line-height: 20px;
+ border-radius: 10px;
+ background-color: white;
+}
+
+.body #mainImg{
+ border-radius: 10px 0px 0px 10px;
+}
+
+.text{
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ width: 100%;
+ padding: 5%;
+ position: relative;
+}
+
+.text .heading{
+ margin-bottom: 5%;
+ font-size: 19px;
+ font-weight: 700;
+ font-family: "Manrope", sans-serif;
+}
+
+.text .subtext{
+ font-size: 14px;
+ margin-bottom: 3%;
+}
+
+ .text .person{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  justify-content: space-between;
+  margin-top: 5%;
+}
+
+.text .person .images{
+ display: flex;
+ width: 42%;
+ justify-content: space-between;
+}
+
+.text .person .images img{
+ border-radius: 100px;
+}
+
+.person #button{
+ background-color: hsl(210, 46%, 95%);
+ border-radius: 50px;
+ padding: 8px;
+ margin-right: 4%;
+ display: inline-block;
+ text-decoration: none;
+ cursor:pointer;
+ outline: none;
+ border: none;
+ color: white;
+}
+
+.share{
+ padding: 3%;
+ background-color: hsl(217, 19%, 35%);
+ color: hsl(212, 23%, 69%);
+ display: flex;
+ width: 40%;
+ align-items: center;
+ border-radius: 10px;
+ justify-content: space-around;
+ position: absolute;
+ top: 50%;
+ left: 74%;
+ display: none;
+}
+
+.share .shareSvg{
+ display: flex;
+ align-items: center;
+ width: 50%;
+ justify-content: space-evenly;
+}
+
+.share .triangle{
+ width: 20px;
+ height: 20px;
+ background-color: hsl(217, 19%, 35%);
+ position: absolute;
+ top: 80%;
+ left: 20%;
+ transform: rotateY(0deg) rotate(45deg);
+}
+
+.person #buttonClose{
+  background-color: hsl(210, 46%, 95%);
+ border-radius: 50px;
+ padding: 8px;
+ margin-right: 4%;
+ display: inline-block;
+ text-decoration: none;
+ cursor:pointer;
+ outline: none;
+ border: none;
+ color: white;
+ display: none;
+} 
+
+
+.share #buttonCloseOne{
+ display: none;
+ background-color: hsl(210, 46%, 95%);
+ border-radius: 50px;
+ padding: 8px;
+ margin-right: 4%;
+ display: inline-block;
+ text-decoration: none;
+ cursor:pointer;
+ outline: none;
+ border: none;
+ color: white;
+ display: none;
+}
+
+@media (max-width:769px ){
+ .body{
+  width: 95%;
+ }
+}
+
+@media (max-width:600px){
+ .body{
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ }
+  .body #mainImg{
+  width: 100%;
+  border-radius: 10px 10px 0px 0px;
+ }
+ .text{
+  margin-top: 5%;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+ }
+ .person{
+  padding-top: 20px;
+ }
+ .text .person .images img{
+  width: 40px;
+ }
+
+ .text .person .images{
+  width: 60%;
+ }
+
+ .share{
+  top: 75%;
+  left: 0;
+  width: 94%;
+  height: 50px;
+  border-radius: 0px 0px 10px 10px;
+  justify-content: space-between;
+  
+  
+ }
+
+ .share .shareSvg{
+  width: 35%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 15%;
+ }
+ .share #buttonCloseOne{
+ background-color: hsl(210, 46%, 95%);
+ border-radius: 50px;
+ padding: 8px;
+ margin-right: 4%;
+ display: inline-block;
+ text-decoration: none;
+ cursor:pointer;
+ outline: none;
+ border: none;
+ color: white;
+ 
+}
+.share .triangle{
+ display: none;
+}
+
+}
+
+
+.attribution {
+  font-size: 11px; 
+  text-align: center; 
+ }
+.attribution a {
+ color: hsl(228, 45%, 44%); 
+}
